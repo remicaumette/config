@@ -1,0 +1,68 @@
+[
+    {
+        "key": "shift+cmd+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
+        "key": "cmd+k w",
+        "command": "-workbench.action.closeEditorsInGroup"
+    },
+    {
+        "key": "shift+cmd+w",
+        "command": "workbench.action.closeAllEditors"
+    },
+    {
+        "key": "cmd+k cmd+w",
+        "command": "-workbench.action.closeAllEditors"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "shift+cmd+p",
+        "command": "-workbench.action.showCommands"
+    },
+    {
+        "key": "cmd+d",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+o",
+        "command": "typescript.organizeImports",
+        "when": "typescript.canOrganizeImports && typescript.isManagedFile"
+    },
+    {
+        "key": "shift+alt+o",
+        "command": "-typescript.organizeImports",
+        "when": "typescript.canOrganizeImports && typescript.isManagedFile"
+    },
+    {
+        "key": "f3",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.goToDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "shift+cmd+o",
+        "command": "go.import.add"
+    }
+]
