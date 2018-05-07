@@ -20,7 +20,6 @@ cp ./fish/config.fish ~/.config/fish/
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/fish
 cp ./fish/profile ~/.profile
-mkdir -p ~/Documents/Go/bin
 
 echo "Configuring visual studio code..."
 code --install-extension PeterJausovec.vscode-docker
@@ -40,3 +39,11 @@ mas install 409183694 # Keynote
 
 echo "Please configure your terminal"
 open ./terminal/Nord.terminal
+
+echo "Configuring git..."
+git config --global user.email "remicaumette@icloud.com"
+git config --global user.name "Remi Caumette"
+
+echo "Configuring your workspace..."
+mkdir -p ~/Documents/Workspace
+mkdir -p ~/Documents/Go/{src,bin}
