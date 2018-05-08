@@ -1,0 +1,29 @@
+call plug#begin('~/.vim/plugged')
+	Plug 'arcticicestudio/nord-vim'	
+	Plug 'vim-airline/vim-airline'
+	Plug 'tmux-plugins/vim-tmux'
+	Plug 'tmux-plugins/vim-tmux-focus-events'
+	Plug 'pangloss/vim-javascript'
+	Plug 'leafgarland/typescript-vim'
+	Plug 'ianks/vim-tsx'
+call plug#end()
+
+autocmd VimEnter *
+	\  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+	\|   PlugInstall --sync | q
+	\| endif
+
+syntax on
+colorscheme nord
+
+let g:nord_italic_comments = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'default'
+
+set mouse=a
+set tabstop=4
+let g:airline_theme = 'nord'
+set shiftwidth=4
+set autoindent
+set number
+set cursorline

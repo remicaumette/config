@@ -5,7 +5,7 @@ echo "Installing brew..."
 echo "Installing packages..."
 brew tap caskroom/cask
 brew cask install visual-studio-code discord google-chrome docker virtualbox java vagrant
-brew install go node maven curl git packer terraform consul nomad fish mas
+brew install go node maven curl git packer terraform consul nomad fish mas python
 
 echo "Configuring ssh..."
 mkdir -p ~/.ssh/
@@ -43,6 +43,10 @@ open ./terminal/Nord.terminal
 echo "Configuring git..."
 git config --global user.email "remicaumette@icloud.com"
 git config --global user.name "Remi Caumette"
+
+echo "Configuring vim..."
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+cp ./vim/vimrc ~/.vimrc
 
 echo "Configuring your workspace..."
 mkdir -p ~/Documents/Workspace
