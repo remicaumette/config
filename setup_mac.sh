@@ -4,7 +4,7 @@ echo "Installing brew..."
 
 echo "Installing packages..."
 brew tap caskroom/cask
-brew cask install visual-studio-code discord google-chrome docker virtualbox java vagrant
+brew cask install visual-studio-code discord google-chrome docker virtualbox java vagrant spotify
 brew install go node maven curl git packer terraform consul nomad fish mas python
 
 echo "Configuring ssh..."
@@ -47,6 +47,9 @@ git config --global user.name "Remi Caumette"
 echo "Configuring vim..."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 cp ./vim/vimrc ~/.vimrc
+
+echo "Configuring vagrant..."
+vagrant plugin install vagrant-vbguest
 
 echo "Configuring your workspace..."
 mkdir -p ~/Documents/Workspace
