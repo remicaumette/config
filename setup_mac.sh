@@ -4,8 +4,8 @@ echo "Installing brew..."
 
 echo "Installing packages..."
 brew tap caskroom/cask
-brew cask install visual-studio-code discord google-chrome docker virtualbox java vagrant spotify
-brew install go node maven curl git packer terraform consul nomad fish mas python
+brew cask install visual-studio-code discord google-chrome docker virtualbox java vagrant spotify intellij-idea-ce
+brew install go node maven curl git packer terraform consul nomad fish mas python grable sbt scala
 
 echo "Configuring ssh..."
 mkdir -p ~/.ssh/
