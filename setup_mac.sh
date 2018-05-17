@@ -28,6 +28,8 @@ code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.Go
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension zhuangtongfa.Material-theme
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension octref.vetur
 mkdir -p ~/Library/Application\ Support/Code/User/
 cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/
 cp ./vscode/keybindings.json ~/Library/Application\ Support/Code/User/
