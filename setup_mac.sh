@@ -4,7 +4,7 @@ echo "Installing brew..."
 
 echo "Installing packages..."
 brew tap caskroom/cask
-brew cask install visual-studio-code discord google-chrome docker virtualbox java vagrant spotify intellij-idea-ce
+brew cask install visual-studio-code discord google-chrome docker virtualbox java vagrant spotify intellij-idea-ce ultimaker-cura
 brew install go node maven curl git packer terraform consul nomad fish mas python sbt scala
 
 echo "Configuring ssh..."
@@ -30,6 +30,7 @@ code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension zhuangtongfa.Material-theme
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension octref.vetur
+code --install-extension kumar-harsh.graphql-for-vscode
 mkdir -p ~/Library/Application\ Support/Code/User/
 cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/
 cp ./vscode/keybindings.json ~/Library/Application\ Support/Code/User/
