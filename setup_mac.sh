@@ -2,9 +2,13 @@
 echo "Installing brew..."
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+echo "Installing drivers..."
+brew tap caskroom/drivers
+brew cask install silicon-labs-vcp-driver wch-ch34x-usb-serial-driver
+
 echo "Installing packages..."
 brew tap caskroom/cask
-brew cask install visual-studio-code discord google-chrome docker virtualbox java vagrant spotify intellij-idea-ce ultimaker-cura
+brew cask install visual-studio-code discord google-chrome docker virtualbox java vagrant spotify intellij-idea-ce ultimaker-cura arduino
 brew install go node maven curl git packer terraform consul nomad fish mas python sbt scala
 
 echo "Configuring ssh..."
