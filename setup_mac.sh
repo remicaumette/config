@@ -35,6 +35,7 @@ code --install-extension zhuangtongfa.Material-theme
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension octref.vetur
 code --install-extension kumar-harsh.graphql-for-vscode
+code --install-extension ms-python.python
 mkdir -p ~/Library/Application\ Support/Code/User/
 cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/
 cp ./vscode/keybindings.json ~/Library/Application\ Support/Code/User/

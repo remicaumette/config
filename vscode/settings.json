@@ -16,5 +16,7 @@
     "go.goroot": "/usr/local/opt/go/libexec",
     "workbench.colorTheme": "One Dark Pro",
     "extensions.ignoreRecommendations": false,
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "python.linting.enabled": true,
+    "python.pythonPath": "/usr/local/opt/python3/bin/python3"
 }
