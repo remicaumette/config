@@ -10,10 +10,11 @@
     "explorer.openEditors.visible": 0,
     "docker.showExplorer": false,
     "workbench.commandPalette.history": 10,
-    "workbench.colorTheme": "One Dark Pro",
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     "go.autocompleteUnimportedPackages": true,
-    "go.formatTool": "gofmt",
     "go.gopath": "/Users/remi/Documents/Go",
-    "go.goroot": "/usr/local/opt/go/libexec"
+    "go.goroot": "/usr/local/opt/go/libexec",
+    "workbench.colorTheme": "One Dark Pro",
+    "extensions.ignoreRecommendations": false,
+    "files.insertFinalNewline": true
 }

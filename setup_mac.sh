@@ -8,7 +8,7 @@ brew cask install silicon-labs-vcp-driver wch-ch34x-usb-serial-driver
 
 echo "Installing packages..."
 brew tap caskroom/cask
-brew cask install visual-studio-code discord google-chrome docker virtualbox java vagrant spotify intellij-idea-ce ultimaker-cura arduino
+brew cask install visual-studio-code discord google-chrome docker virtualbox java vagrant spotify intellij-idea-ce ultimaker-cura arduino google-cloud-sdk
 brew install go node maven curl git packer terraform consul nomad fish mas python sbt scala
 
 echo "Configuring ssh..."
