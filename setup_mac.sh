@@ -8,7 +8,7 @@ brew cask install silicon-labs-vcp-driver wch-ch34x-usb-serial-driver
 
 echo "Installing packages..."
 brew tap caskroom/cask
-brew cask install visual-studio-code discord google-chrome docker virtualbox java vagrant spotify intellij-idea-ce ultimaker-cura arduino google-cloud-sdk
+brew cask install visual-studio-code discord google-chrome docker virtualbox java vagrant spotify intellij-idea-ce ultimaker-cura arduino google-cloud-sdk iterm2
 brew install go node maven curl git packer terraform consul nomad fish mas python sbt scala
 
 echo "Configuring ssh..."
@@ -36,6 +36,7 @@ code --install-extension dbaeumer.vscode-eslint
 code --install-extension octref.vetur
 code --install-extension kumar-harsh.graphql-for-vscode
 code --install-extension ms-python.python
+code --install-extension mauve.terraform
 mkdir -p ~/Library/Application\ Support/Code/User/
 cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/
 cp ./vscode/keybindings.json ~/Library/Application\ Support/Code/User/
@@ -46,7 +47,7 @@ mas install 409203825 # Numbers
 mas install 409183694 # Keynote
 
 echo "Please configure your terminal"
-open ./terminal/Nord.terminal
+open ./terminal/Nord.itermcolors
 
 echo "Configuring git..."
 git config --global user.email "remicaumette@icloud.com"
