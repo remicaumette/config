@@ -1,4 +1,0 @@
-export GOROOT="/usr/local/opt/go/libexec"
-export GOPATH="/Users/$USER/Documents/Go"
-export PATH="$GOROOT/bin:$PATH"
-export PATH="$GOPATH/bin:$PATH"

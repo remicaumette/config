@@ -4,26 +4,54 @@ echo "Installing brew..."
 
 echo "Installing drivers..."
 brew tap caskroom/drivers
-brew cask install silicon-labs-vcp-driver wch-ch34x-usb-serial-driver
+brew cask install \
+    silicon-labs-vcp-driver \
+    wch-ch34x-usb-serial-driver
+
+echo "Installing fonts..."
+brew tap caskroom/fonts
+brew cask install \
+    font-menlo-for-powerline
 
 echo "Installing packages..."
 brew tap caskroom/cask
-brew cask install visual-studio-code discord google-chrome docker virtualbox java vagrant spotify intellij-idea-ce ultimaker-cura arduino google-cloud-sdk iterm2
-brew install go node maven curl git packer terraform consul nomad fish mas python sbt scala
+brew cask install \
+    visual-studio-code \
+    discord \
+    google-chrome \
+    docker \
+    virtualbox \
+    java \
+    vagrant \
+    spotify \
+    intellij-idea-ce \
+    ultimaker-cura \
+    arduino \
+    google-cloud-sdk \
+    iterm2
+brew install \
+    go \
+    node \
+    maven \
+    curl \
+    git \
+    packer \
+    terraform \
+    consul \
+    nomad \
+    mas \
+    python \
+    zsh \
+    zsh-completions \
+    neovim
 
-echo "Configuring ssh..."
-mkdir -p ~/.ssh/
-cp ./ssh/id_rsa ~/.ssh/
-cp ./ssh/id_rsa.pub ~/.ssh/
-chmod 600 ~/.ssh/id_rsa
-chmod 600 ~/.ssh/id_rsa.pub
-
-echo "Configuring fish..."
-mkdir -p ~/.config/fish/
-cp ./fish/config.fish ~/.config/fish/
-echo /usr/local/bin/fish | sudo tee -a /etc/shells
-chsh -s /usr/local/bin/fish
-cp ./fish/profile ~/.profile
+echo "Configuring zsh..."
+touch ~/.hushlogin
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+mkdir -p ~/.config/zsh
+cp ./zsh/zshrc ~/.zshrc
+echo /usr/local/bin/zsh | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/zsh
 
 echo "Configuring visual studio code..."
 code --install-extension PeterJausovec.vscode-docker
@@ -53,9 +81,10 @@ echo "Configuring git..."
 git config --global user.email "remicaumette@icloud.com"
 git config --global user.name "Remi Caumette"
 
-echo "Configuring vim..."
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-cp ./vim/vimrc ~/.vimrc
+echo "Configuring neovim..."
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+pip3 install neovim
+cp ./nvim/init.vim ~/.config/nvim/init.vim
 
 echo "Configuring vagrant..."
 vagrant plugin install vagrant-vbguest
