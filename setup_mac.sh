@@ -28,7 +28,8 @@ brew cask install \
     ultimaker-cura \
     arduino \
     google-cloud-sdk \
-    iterm2
+    iterm2 \
+    minikube
 brew install \
     go \
     node \
