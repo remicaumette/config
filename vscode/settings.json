@@ -10,7 +10,12 @@
     "explorer.openEditors.visible": 0,
     "docker.showExplorer": false,
     "workbench.commandPalette.history": 10,
-    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.env.osx": {
+        "ZDOTDIR": "/Users/remi"
+    },
+    "terminal.integrated.fontFamily": "Menlo for Powerline",
+    "terminal.integrated.shell.osx": "zsh",
     "go.autocompleteUnimportedPackages": true,
     "go.gopath": "/Users/remi/Documents/Go",
     "go.goroot": "/usr/local/opt/go/libexec",
