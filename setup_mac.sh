@@ -46,7 +46,8 @@ brew install \
     zsh-completions \
     neovim \
     scala \
-    sbt
+    sbt \
+    dep
 
 echo "Configuring zsh..."
 touch ~/.hushlogin
