@@ -44,7 +44,9 @@ brew install \
     python \
     zsh \
     zsh-completions \
-    neovim
+    neovim \
+    scala \
+    sbt
 
 echo "Configuring zsh..."
 touch ~/.hushlogin

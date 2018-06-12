@@ -12,6 +12,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+unsetopt correct_all
+
 export ZSH_CACHE_DIR=~/.config/zsh
 
 if [[ -n $SSH_CONNECTION ]]; then
