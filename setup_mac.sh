@@ -48,7 +48,9 @@ brew install \
     scala \
     sbt \
     dep \
-    kubernetes-helm
+    kubernetes-helm \
+    protobuf \
+    grpc
 
 echo "Configuring zsh..."
 touch ~/.hushlogin
