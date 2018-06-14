@@ -1,6 +1,6 @@
 export ZSH=/Users/remi/.oh-my-zsh
 export ZSH_THEME=agnoster
-export ENABLE_CORRECTION=true
+export ENABLE_CORRECTION=false
 export HISTFILE=~/.config/zsh/histfile
 export HISTSIZE=1000
 export SAVEHIST=1000
@@ -8,13 +8,27 @@ export ZDOTDIR=~/.config/zsh
 
 plugins=(
 	git
+	docker
+	mvn
+	npm
+	python
+	sbt
+	scala
 )
 
-source $ZSH/oh-my-zsh.sh
-
-unsetopt correct_all
-
+export XDG_DATA_HOME=~/.config
+export XDG_CONFIG_HOME=~/.config
+export XDG_CACHE_HOME=~/.config
+export KUBECONFIG=~/.config/kube
+export HELM_HOME=~/.config/helm
+export MINIKUBE_HOME=~/.config/minikube
 export ZSH_CACHE_DIR=~/.config/zsh
+
+source $ZSH/oh-my-zsh.sh
+source <(helm completion zsh)
+source <(kubectl completion zsh)
+source <(MINIKUBE_WANTUPDATENOTIFICATION=false minikube completion zsh)
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
 if [[ -n $SSH_CONNECTION ]]; then
     export EDITOR=vim
@@ -33,6 +47,7 @@ export PACKER_CACHE_DIR=~/.config/packer
 export VAGRANT_HOME=~/.config/vagrant
 export CHECKPOINT_DISABLE=1
 export DEFAULT_USER=$(whoami)
+export PYLINTHOME=~/.config/pylint
 
 alias vi=$EDITOR
 alias vim=$EDITOR
