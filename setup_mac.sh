@@ -47,7 +47,8 @@ brew install \
     neovim \
     scala \
     sbt \
-    dep
+    dep \
+    kubernetes-helm
 
 echo "Configuring zsh..."
 touch ~/.hushlogin
