@@ -1,4 +1,4 @@
-export ZSH=/Users/remi/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 export ZSH_THEME=agnoster
 export ENABLE_CORRECTION=false
 export HISTFILE=~/.config/zsh/histfile
@@ -25,6 +25,7 @@ export MINIKUBE_HOME=~/.config/minikube
 export ZSH_CACHE_DIR=~/.config/zsh
 
 source $ZSH/oh-my-zsh.sh
+source <(pip3 completion --zsh)
 source <(helm completion zsh)
 source <(kubectl completion zsh)
 source <(MINIKUBE_WANTUPDATENOTIFICATION=false minikube completion zsh)
@@ -48,7 +49,10 @@ export VAGRANT_HOME=~/.config/vagrant
 export CHECKPOINT_DISABLE=1
 export DEFAULT_USER=$(whoami)
 export PYLINTHOME=~/.config/pylint
+export PATH="$HOME/.config/scripts:$PATH"
 
 alias vi=$EDITOR
 alias vim=$EDITOR
 alias nano=$EDITOR
+alias python=python3
+alias pip=pip3

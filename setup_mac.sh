@@ -48,8 +48,7 @@ brew install \
     sbt \
     dep \
     kubernetes-helm \
-    protobuf \
-    grpc
+    protobuf
 
 echo "Configuring zsh..."
 touch ~/.hushlogin
@@ -71,6 +70,7 @@ code --install-extension octref.vetur
 code --install-extension kumar-harsh.graphql-for-vscode
 code --install-extension ms-python.python
 code --install-extension mauve.terraform
+code --install-extension zxh404.vscode-proto3
 mkdir -p ~/Library/Application\ Support/Code/User/
 cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/
 cp ./vscode/keybindings.json ~/Library/Application\ Support/Code/User/
@@ -96,5 +96,6 @@ echo "Configuring vagrant..."
 vagrant plugin install vagrant-vbguest
 
 echo "Configuring your workspace..."
+cp -r ./scripts ~/.config
 mkdir -p ~/Documents/Workspace
 mkdir -p ~/Documents/Go/{src,bin}
