@@ -23,7 +23,6 @@ brew cask install \
     virtualbox \
     java \
     vagrant \
-    spotify \
     intellij-idea-ce \
     ultimaker-cura \
     arduino \
