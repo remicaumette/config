@@ -48,7 +48,8 @@ brew install \
     sbt \
     dep \
     kubernetes-helm \
-    protobuf
+    protobuf \
+    rust
 
 echo "Configuring zsh..."
 touch ~/.hushlogin
