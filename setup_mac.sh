@@ -48,8 +48,7 @@ brew install \
     sbt \
     dep \
     kubernetes-helm \
-    protobuf \
-    rust
+    protobuf
 
 echo "Configuring zsh..."
 touch ~/.hushlogin
@@ -81,6 +80,9 @@ echo "Installing mac applications..."
 mas install 409201541 # Pages
 mas install 409203825 # Numbers
 mas install 409183694 # Keynote
+
+echo "Installing rust..."
+curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --default-toolchain stable
 
 echo "Please configure your terminal"
 open ./terminal/Nord.itermcolors
