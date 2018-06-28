@@ -98,9 +98,6 @@ vagrant plugin install vagrant-vbguest
 
 echo "Installing rust..."
 curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --default-toolchain stable
-rustup component add rust-analysis
-rustup component add rust-src
-rustup component add rls-preview
 
 echo "Configuring your workspace..."
 cp -r ./scripts ~/.config
