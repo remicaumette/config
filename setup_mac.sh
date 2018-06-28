@@ -81,9 +81,6 @@ mas install 409201541 # Pages
 mas install 409203825 # Numbers
 mas install 409183694 # Keynote
 
-echo "Installing rust..."
-curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --default-toolchain stable
-
 echo "Please configure your terminal"
 open ./terminal/Nord.itermcolors
 
@@ -98,6 +95,12 @@ cp ./nvim/init.vim ~/.config/nvim/init.vim
 
 echo "Configuring vagrant..."
 vagrant plugin install vagrant-vbguest
+
+echo "Installing rust..."
+curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --default-toolchain stable
+rustup component add rust-analysis
+rustup component add rust-src
+rustup component add rls-preview
 
 echo "Configuring your workspace..."
 cp -r ./scripts ~/.config

@@ -16,9 +16,6 @@ plugins=(
 	scala
 )
 
-export XDG_DATA_HOME=~/.config
-export XDG_CONFIG_HOME=~/.config
-export XDG_CACHE_HOME=~/.config
 export KUBECONFIG=~/.config/kube
 export HELM_HOME=~/.config/helm
 export MINIKUBE_HOME=~/.config/minikube
