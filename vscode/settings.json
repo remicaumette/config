@@ -20,5 +20,6 @@
     "files.insertFinalNewline": true,
     "python.linting.enabled": true,
     "python.pythonPath": "/usr/local/opt/python3/bin/python3",
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "rust-client.channel": "stable"
 }

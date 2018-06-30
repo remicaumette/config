@@ -1,4 +1,4 @@
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 	Plug 'arcticicestudio/nord-vim'	
 	Plug 'vim-airline/vim-airline'
 	Plug 'tmux-plugins/vim-tmux'
@@ -23,6 +23,7 @@ let g:airline_powerline_fonts = 1
 let g:rustfmt_autosave = 1
 let g:airline#extensions#ale#enabled = 1
 let g:ale_completion_enabled = 1
+let g:ale_rust_rls_toolchain = 'stable'
 
 set mouse=a
 set encoding=utf-8
