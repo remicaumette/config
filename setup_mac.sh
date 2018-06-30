@@ -75,6 +75,8 @@ code --install-extension ms-python.python
 code --install-extension mauve.terraform
 code --install-extension zxh404.vscode-proto3
 code --install-extension rust-lang.rust
+code --install-extension vadimcn.vscode-lldb
+code --install-extension bungcip.better-toml
 mkdir -p ~/Library/Application\ Support/Code/User/
 cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/
 cp ./vscode/keybindings.json ~/Library/Application\ Support/Code/User/
