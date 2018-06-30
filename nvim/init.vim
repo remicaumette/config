@@ -2,15 +2,12 @@ call plug#begin('~/.local/share/nvim/plugged')
 	Plug 'arcticicestudio/nord-vim'	
 	Plug 'vim-airline/vim-airline'
 	Plug 'tmux-plugins/vim-tmux'
-	Plug 'tmux-plugins/vim-tmux-focus-events'
-	Plug 'pangloss/vim-javascript'
-	Plug 'leafgarland/typescript-vim'
-	Plug 'jparise/vim-graphql'
-	Plug 'ianks/vim-tsx'
 	Plug 'mhinz/vim-startify'
-	Plug 'roxma/nvim-completion-manager', { 'do': ':UpdateRemotePlugins' }
-	Plug 'roxma/ncm-clang'
-    Plug 'vim-airline/vim-airline-themes'
+    Plug 'rust-lang/rust.vim'
+    Plug 'tpope/vim-fugitive'
+    Plug 'scrooloose/nerdtree'
+    Plug 'cespare/vim-toml'
+    Plug 'w0rp/ale'
 call plug#end()
 
 autocmd VimEnter *
@@ -22,7 +19,10 @@ syntax on
 colorscheme nord
 
 let g:nord_italic_comments = 1
-let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts = 1
+let g:rustfmt_autosave = 1
+let g:airline#extensions#ale#enabled = 1
+let g:ale_completion_enabled = 1
 
 set mouse=a
 set encoding=utf-8

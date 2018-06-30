@@ -54,6 +54,7 @@ export CHECKPOINT_DISABLE=1
 export DEFAULT_USER=$(whoami)
 export PYLINTHOME=~/.config/pylint
 export PATH="$HOME/.config/scripts:$PATH"
+export XDG_DATA_HOME=~/.config
 
 alias vi=$EDITOR
 alias vim=$EDITOR

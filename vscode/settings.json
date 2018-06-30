@@ -11,17 +11,14 @@
     "docker.showExplorer": false,
     "workbench.commandPalette.history": 10,
     "terminal.integrated.fontSize": 12,
-    "terminal.integrated.env.osx": {
-        "ZDOTDIR": "/Users/remi"
-    },
     "terminal.integrated.fontFamily": "Menlo for Powerline",
     "terminal.integrated.shell.osx": "zsh",
     "go.autocompleteUnimportedPackages": true,
-    "go.gopath": "/Users/remi/Documents/Go",
     "go.goroot": "/usr/local/opt/go/libexec",
     "workbench.colorTheme": "One Dark Pro",
     "extensions.ignoreRecommendations": false,
     "files.insertFinalNewline": true,
     "python.linting.enabled": true,
-    "python.pythonPath": "/usr/local/opt/python3/bin/python3"
+    "python.pythonPath": "/usr/local/opt/python3/bin/python3",
+    "window.zoomLevel": 0
 }

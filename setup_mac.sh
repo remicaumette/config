@@ -92,7 +92,7 @@ git config --global user.email "remicaumette@icloud.com"
 git config --global user.name "Remi Caumette"
 
 echo "Configuring neovim..."
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -fLo ~/.config/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 pip3 install neovim
 cp ./nvim/init.vim ~/.config/nvim/init.vim
 
