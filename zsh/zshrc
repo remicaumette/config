@@ -1,10 +1,11 @@
-export ZSH=~/.oh-my-zsh
+export ZSH=~/.config/oh-my-zsh
 export ZSH_THEME=agnoster
 export ENABLE_CORRECTION=false
 export HISTFILE=~/.config/zsh/histfile
 export HISTSIZE=1000
 export SAVEHIST=1000
-export ZDOTDIR=~/.config/zsh
+export ZDOTDIR=~
+export ZSH_CACHE_DIR=~/.config/zsh
 
 plugins=(
 	git
@@ -16,16 +17,20 @@ plugins=(
 	scala
 )
 
+export ZSH_COMPDUMP="$ZSH_CACHE_DIR/zcompdump"
+source "$ZSH/oh-my-zsh.sh"
+
 export KUBECONFIG=~/.config/kube
 export HELM_HOME=~/.config/helm
 export MINIKUBE_HOME=~/.config/minikube
-export ZSH_CACHE_DIR=~/.config/zsh
+export RUSTUP_HOME=~/.config/rustup
+export CARGO_HOME=~/.config/cargo
 
-source $ZSH/oh-my-zsh.sh
+source "$CARGO_HOME/env"
+
 source <(pip3 completion --zsh)
 source <(helm completion zsh)
 source <(kubectl completion zsh)
-source $HOME/.cargo/env
 source <(MINIKUBE_WANTUPDATENOTIFICATION=false minikube completion zsh)
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
@@ -40,7 +45,7 @@ export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=~/Documents/Go
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$CARGO_HOME/bin:$PATH"
 export BABEL_DISABLE_CACHE=1
 export NODE_REPL_HISTORY=''
 export PACKER_CACHE_DIR=~/.config/packer
@@ -55,3 +60,5 @@ alias vim=$EDITOR
 alias nano=$EDITOR
 alias python=python3
 alias pip=pip3
+
+source <(rustup completions bash)

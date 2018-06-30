@@ -48,13 +48,16 @@ brew install \
     sbt \
     dep \
     kubernetes-helm \
-    protobuf
+    protobuf \
+	tmux
 
 echo "Configuring zsh..."
 touch ~/.hushlogin
+export ZSH="$HOME/.config/oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 mkdir -p ~/.config/zsh
 cp ./zsh/zshrc ~/.zshrc
+ln -s ~/.zshrc ~/.config/zsh/.zshrc
 echo /usr/local/bin/zsh | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/zsh
 
@@ -93,10 +96,9 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 pip3 install neovim
 cp ./nvim/init.vim ~/.config/nvim/init.vim
 
-echo "Configuring vagrant..."
-vagrant plugin install vagrant-vbguest
-
 echo "Installing rust..."
+export RUSTUP_HOME=~/.config/rustup
+export CARGO_HOME=~/.config/cargo
 curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --default-toolchain stable
 
 echo "Configuring your workspace..."
