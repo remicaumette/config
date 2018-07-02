@@ -28,7 +28,8 @@ brew cask install \
     arduino \
     google-cloud-sdk \
     iterm2 \
-    minikube
+    minikube \
+	slack
 brew install \
     go \
     node \
@@ -50,6 +51,7 @@ brew install \
     kubernetes-helm \
     protobuf \
 	tmux
+brew link --overwrite python
 
 echo "Configuring zsh..."
 touch ~/.hushlogin
@@ -77,6 +79,7 @@ code --install-extension zxh404.vscode-proto3
 code --install-extension rust-lang.rust
 code --install-extension vadimcn.vscode-lldb
 code --install-extension bungcip.better-toml
+code --install-extension toba.vsfire
 mkdir -p ~/Library/Application\ Support/Code/User/
 cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/
 cp ./vscode/keybindings.json ~/Library/Application\ Support/Code/User/
