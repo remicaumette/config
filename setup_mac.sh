@@ -80,6 +80,8 @@ code --install-extension rust-lang.rust
 code --install-extension vadimcn.vscode-lldb
 code --install-extension bungcip.better-toml
 code --install-extension toba.vsfire
+code --install-extension dragos.scala-lsp
+
 mkdir -p ~/Library/Application\ Support/Code/User/
 cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/
 cp ./vscode/keybindings.json ~/Library/Application\ Support/Code/User/
@@ -89,12 +91,12 @@ mas install 409201541 # Pages
 mas install 409203825 # Numbers
 mas install 409183694 # Keynote
 
+echo "Configuring sbt..."
+mkdir -p ~/.sbt/1.0/plugins
+cp ./sbt/plugins.sbt ~/.sbt/1.0/plugins/plugins.sbt
+
 echo "Please configure your terminal"
 open ./terminal/Nord.itermcolors
-
-echo "Configuring git..."
-git config --global user.email "remicaumette@icloud.com"
-git config --global user.name "Remi Caumette"
 
 echo "Configuring neovim..."
 curl -fLo ~/.config/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
