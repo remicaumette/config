@@ -40,7 +40,7 @@ else
     export EDITOR=nvim
 fi
 
-export SSH_KEY_PATH=~/.ssh/rsa_id
+export SSH_KEY_PATH=~/.ssh/id_rsa
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=~/Documents/Go
 export PATH="$GOROOT/bin:$PATH"

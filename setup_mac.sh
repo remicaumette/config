@@ -81,7 +81,7 @@ code --install-extension vadimcn.vscode-lldb
 code --install-extension bungcip.better-toml
 code --install-extension toba.vsfire
 code --install-extension dragos.scala-lsp
-
+code --install-extension lightbend.vscode-sbt-scala
 mkdir -p ~/Library/Application\ Support/Code/User/
 cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/
 cp ./vscode/keybindings.json ~/Library/Application\ Support/Code/User/
