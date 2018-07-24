@@ -50,7 +50,15 @@ brew install \
     dep \
     kubernetes-helm \
     protobuf \
-	tmux
+	tmux \
+    coreutils \
+    unzip \
+    openssh \
+    rsync \
+    gpatch \
+    gdb \
+    make \
+    less
 brew link --overwrite python
 
 echo "Configuring zsh..."
