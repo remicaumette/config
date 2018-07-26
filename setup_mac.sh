@@ -44,8 +44,6 @@ brew install \
     zsh \
     zsh-completions \
     neovim \
-    scala \
-    sbt \
     dep \
     kubernetes-helm \
     protobuf \
@@ -88,8 +86,6 @@ code --install-extension rust-lang.rust
 code --install-extension vadimcn.vscode-lldb
 code --install-extension bungcip.better-toml
 code --install-extension toba.vsfire
-code --install-extension dragos.scala-lsp
-code --install-extension lightbend.vscode-sbt-scala
 code --install-extension webfreak.debug
 code --install-extension eamodio.gitlens
 mkdir -p ~/Library/Application\ Support/Code/User/
@@ -100,10 +96,6 @@ echo "Installing mac applications..."
 mas install 409201541 # Pages
 mas install 409203825 # Numbers
 mas install 409183694 # Keynote
-
-echo "Configuring sbt..."
-mkdir -p ~/.sbt/1.0/plugins
-cp ./sbt/plugins.sbt ~/.sbt/1.0/plugins/plugins.sbt
 
 echo "Please configure your terminal"
 open ./terminal/Nord.itermcolors

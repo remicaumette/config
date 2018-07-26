@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 echo "Brew updates..."
 brew upgrade
 brew cask upgrade
@@ -7,4 +8,3 @@ brew cask cleanup
 
 echo "NPM updates..."
 npm update -g
-
