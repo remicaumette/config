@@ -23,7 +23,7 @@ brew cask install \
     virtualbox \
     java \
     vagrant \
-    intellij-idea-ce \
+    jetbrains-toolbox \
     ultimaker-cura \
     arduino \
     google-cloud-sdk \
