@@ -28,7 +28,6 @@ brew cask install \
     arduino \
     google-cloud-sdk \
     iterm2 \
-    minikube \
 	slack
 brew install \
     go \
@@ -58,7 +57,8 @@ brew install \
     gpatch \
     gdb \
     make \
-    less
+    less \
+    skaffold
 brew link --overwrite python
 
 echo "Configuring zsh..."
