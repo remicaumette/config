@@ -8,6 +8,9 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'scrooloose/nerdtree'
     Plug 'cespare/vim-toml'
     Plug 'w0rp/ale'
+	Plug '/usr/local/opt/fzf'
+	Plug 'junegunn/fzf.vim'
+	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 autocmd VimEnter *
@@ -17,6 +20,9 @@ autocmd VimEnter *
 
 syntax on
 colorscheme nord
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
 let g:nord_italic_comments = 1
 let g:airline_powerline_fonts = 1
@@ -32,5 +38,9 @@ let g:airline_theme = 'nord'
 set shiftwidth=4
 set autoindent
 set number
-set cursorline
+set noswapfile
+set ignorecase
+
+map ; :Files<CR>
+map <C-n> :NERDTreeToggle<CR>
 

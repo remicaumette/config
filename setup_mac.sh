@@ -56,7 +56,8 @@ brew install \
     gdb \
     make \
     less \
-    skaffold
+    skaffold \
+	fzf
 brew link --overwrite python
 
 echo "Configuring zsh..."
