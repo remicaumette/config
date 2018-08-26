@@ -1,8 +1,9 @@
 call plug#begin('~/.config/nvim/plugged')
-	Plug 'arcticicestudio/nord-vim'	
+	Plug 'joshdick/onedark.vim'
 	Plug 'vim-airline/vim-airline'
-	Plug 'tmux-plugins/vim-tmux'
+	Plug 'vim-airline/vim-airline-themes'
 	Plug 'mhinz/vim-startify'
+	Plug 'sheerun/vim-polyglot'
     Plug 'rust-lang/rust.vim'
     Plug 'tpope/vim-fugitive'
     Plug 'scrooloose/nerdtree'
@@ -17,30 +18,44 @@ autocmd VimEnter *
 	\  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 	\|   PlugInstall --sync | q
 	\| endif
-
-syntax on
-colorscheme nord
-
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-let g:nord_italic_comments = 1
+syntax on
+colorscheme onedark
+
+let g:onedark_termcolors=256
 let g:airline_powerline_fonts = 1
 let g:rustfmt_autosave = 1
 let g:airline#extensions#ale#enabled = 1
 let g:ale_completion_enabled = 1
 let g:ale_rust_rls_toolchain = 'stable'
+let g:airline_theme = 'onedark'
 
 set mouse=a
 set encoding=utf-8
 set tabstop=4
-let g:airline_theme = 'nord'
 set shiftwidth=4
 set autoindent
 set number
 set noswapfile
 set ignorecase
+set noerrorbells
 
 map ; :Files<CR>
 map <C-n> :NERDTreeToggle<CR>
+
+augroup go
+	map <C-S-o> :GoFmt<CR>:GoImports<CR>
+augroup END
+
+if (empty($TMUX))
+  if (has("nvim"))
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+endif
 
