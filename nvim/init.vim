@@ -12,6 +12,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug '/usr/local/opt/fzf'
 	Plug 'junegunn/fzf.vim'
 	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+	Plug 'valloric/youcompleteme'
 call plug#end()
 
 autocmd VimEnter *
@@ -32,6 +33,7 @@ let g:airline#extensions#ale#enabled = 1
 let g:ale_completion_enabled = 1
 let g:ale_rust_rls_toolchain = 'stable'
 let g:airline_theme = 'onedark'
+let g:airline_exclude_preview = 0
 
 set mouse=a
 set encoding=utf-8

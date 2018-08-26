@@ -15,49 +15,52 @@ brew cask install \
 
 echo "Installing packages..."
 brew tap caskroom/cask
-brew cask install \
-    visual-studio-code \
-    discord \
-    google-chrome \
-    docker \
-    virtualbox \
-    java \
-    vagrant \
-    jetbrains-toolbox \
-    ultimaker-cura \
-    arduino \
-    google-cloud-sdk \
-    iterm2 \
-	slack
-brew install \
-    go \
-    node \
-    maven \
-    curl \
-    git \
-    packer \
-    terraform \
-    consul \
-    nomad \
-    mas \
-    python \
-    zsh \
-    zsh-completions \
-    neovim \
-    dep \
-    kubernetes-helm \
-    protobuf \
-	tmux \
-    coreutils \
-    unzip \
-    openssh \
-    rsync \
-    gpatch \
-    gdb \
-    make \
-    less \
-    skaffold \
-	fzf
+brew cask install 		\
+    visual-studio-code 	\
+    discord 			\
+    google-chrome 		\
+    docker				\
+    virtualbox 			\
+    java 				\
+    vagrant 			\
+    jetbrains-toolbox 	\
+    ultimaker-cura 		\
+    arduino 			\
+    google-cloud-sdk 	\
+    iterm2 				\
+	slack				\
+	macdown
+brew install 			\
+    go 					\
+    node 				\
+    maven				\
+    curl	 			\
+    git 				\
+    packer 				\
+    terraform 			\
+    consul 				\
+    nomad 				\
+    mas 				\
+    python 				\
+    zsh 				\
+    zsh-completions 	\
+    neovim 				\
+    dep 				\
+    kubernetes-helm 	\
+    protobuf 			\
+	tmux 				\
+    coreutils 			\
+    unzip 				\
+    openssh 			\
+    rsync 				\
+    gpatch 				\
+    gdb 				\
+    make 				\
+    less 				\
+    skaffold 			\
+	fzf 				\
+	cmake 				\
+	ansible
 brew link --overwrite python
 
 echo "Configuring zsh..."
@@ -99,12 +102,14 @@ mas install 409203825 # Numbers
 mas install 409183694 # Keynote
 
 echo "Please configure your terminal"
-open ./terminal/Nord.itermcolors
+open ./terminal/OneDark.itermcolors
 
 echo "Configuring neovim..."
 curl -fLo ~/.config/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 pip3 install neovim
 cp ./nvim/init.vim ~/.config/nvim/init.vim
+sudo pip3 install --upgrade neovim
+~/.config/nvim/plugged/youcompleteme/install.py --clang-completer --go-completer --rust-completer
 
 echo "Installing rust..."
 export RUSTUP_HOME=~/.config/rustup
