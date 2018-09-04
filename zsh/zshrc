@@ -13,6 +13,7 @@ plugins=(
 	mvn
 	npm
 	python
+    go
 )
 
 export ZSH_COMPDUMP="$ZSH_CACHE_DIR/zcompdump"
@@ -20,10 +21,6 @@ source "$ZSH/oh-my-zsh.sh"
 
 export KUBECONFIG=~/.kube/config
 export HELM_HOME=~/.config/helm
-export RUSTUP_HOME=~/.config/rustup
-export CARGO_HOME=~/.config/cargo
-
-source "$CARGO_HOME/env"
 
 source <(pip3 completion --zsh)
 source <(helm completion zsh)
@@ -41,10 +38,12 @@ export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=~/Documents/Go
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
-export PATH="$CARGO_HOME/bin:$PATH"
 export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/unzip/bin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/llvm/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
 export BABEL_DISABLE_CACHE=1
 export NODE_REPL_HISTORY=''
 export PACKER_CACHE_DIR=~/.config/packer
@@ -57,8 +56,5 @@ export XDG_DATA_HOME=~/.config
 
 alias vi=$EDITOR
 alias vim=$EDITOR
-alias nano=$EDITOR
 alias python=python3
 alias pip=pip3
-
-source <(rustup completions bash)

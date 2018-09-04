@@ -38,17 +38,15 @@ brew install 			\
     git 				\
     packer 				\
     terraform 			\
-    consul 				\
-    nomad 				\
     mas 				\
     python 				\
     zsh 				\
     zsh-completions 	\
     neovim 				\
     dep 				\
+    kubernetes-cli      \
     kubernetes-helm 	\
     protobuf 			\
-	tmux 				\
     coreutils 			\
     unzip 				\
     openssh 			\
@@ -60,7 +58,9 @@ brew install 			\
     skaffold 			\
 	fzf 				\
 	cmake 				\
-	ansible
+	ansible				\
+	llvm				\
+	awscli
 brew link --overwrite python
 
 echo "Configuring zsh..."
@@ -86,11 +86,6 @@ code --install-extension kumar-harsh.graphql-for-vscode
 code --install-extension ms-python.python
 code --install-extension mauve.terraform
 code --install-extension zxh404.vscode-proto3
-code --install-extension rust-lang.rust
-code --install-extension vadimcn.vscode-lldb
-code --install-extension bungcip.better-toml
-code --install-extension toba.vsfire
-code --install-extension webfreak.debug
 code --install-extension eamodio.gitlens
 mkdir -p ~/Library/Application\ Support/Code/User/
 cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/
@@ -109,12 +104,7 @@ curl -fLo ~/.config/nvim/site/autoload/plug.vim --create-dirs https://raw.github
 pip3 install neovim
 cp ./nvim/init.vim ~/.config/nvim/init.vim
 sudo pip3 install --upgrade neovim
-~/.config/nvim/plugged/youcompleteme/install.py --clang-completer --go-completer --rust-completer
-
-echo "Installing rust..."
-export RUSTUP_HOME=~/.config/rustup
-export CARGO_HOME=~/.config/cargo
-curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --default-toolchain stable
+~/.config/nvim/plugged/youcompleteme/install.py --clang-completer --go-completer
 
 echo "Configuring your workspace..."
 cp -r ./scripts ~/.config

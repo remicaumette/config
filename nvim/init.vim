@@ -4,10 +4,8 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'mhinz/vim-startify'
 	Plug 'sheerun/vim-polyglot'
-    Plug 'rust-lang/rust.vim'
     Plug 'tpope/vim-fugitive'
     Plug 'scrooloose/nerdtree'
-    Plug 'cespare/vim-toml'
     Plug 'w0rp/ale'
 	Plug '/usr/local/opt/fzf'
 	Plug 'junegunn/fzf.vim'
@@ -28,12 +26,9 @@ colorscheme onedark
 
 let g:onedark_termcolors=256
 let g:airline_powerline_fonts = 1
-let g:rustfmt_autosave = 1
 let g:airline#extensions#ale#enabled = 1
-let g:ale_completion_enabled = 1
-let g:ale_rust_rls_toolchain = 'stable'
 let g:airline_theme = 'onedark'
-let g:airline_exclude_preview = 0
+let g:airline_exclude_preview = 1
 
 set mouse=a
 set encoding=utf-8
@@ -60,4 +55,3 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
-
