@@ -6,6 +6,7 @@
     "editor.minimap.enabled": false,
     "editor.autoIndent": false,
     "editor.tabSize": 4,
+    "editor.renderWhitespace": "all",
     "editor.detectIndentation": false,
     "explorer.openEditors.visible": 0,
     "docker.showExplorer": false,
@@ -15,13 +16,17 @@
     "terminal.integrated.shell.osx": "zsh",
     "go.autocompleteUnimportedPackages": true,
     "go.goroot": "/usr/local/opt/go/libexec",
-    "workbench.colorTheme": "One Dark Pro",
-    "extensions.ignoreRecommendations": false,
+    "go.lintTool": "gometalinter",
+    "go.lintFlags": [
+        "-exclude=vendor/...",
+        "-exclude=\"\bexported \\w+ (\\S*['.]*)([a-zA-Z'.*]*) should have comment or be unexported\b\""
+    ],
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "extensions.ignoreRecommendations": true,
     "files.insertFinalNewline": true,
     "python.linting.enabled": true,
     "python.pythonPath": "/usr/local/opt/python3/bin/python3",
     "window.zoomLevel": 0,
-    "rust-client.channel": "stable",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
