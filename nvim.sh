@@ -3,6 +3,7 @@ curl -fLo ~/.config/nvim/site/autoload/plug.vim --create-dirs https://raw.github
 pip3 install neovim
 cp ./nvim/init.vim ~/.config/nvim/init.vim
 sudo pip3 install --upgrade neovim
+nvim
 cd ~/.config/nvim/plugged/youcompleteme/
 git submodule update --init --recursive
 ./install.py --clang-completer --go-completer
