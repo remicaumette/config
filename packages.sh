@@ -14,52 +14,53 @@ brew cask install \
 
 echo "Installing packages..."
 brew tap caskroom/cask
-brew cask install 		\
-    visual-studio-code 	\
-    discord 			\
-    google-chrome 		\
-    docker				\
-    virtualbox 			\
-    java 				\
-    vagrant 			\
-    jetbrains-toolbox 	\
-    ultimaker-cura 		\
-    arduino 			\
-    google-cloud-sdk 	\
-    iterm2 				\
-	slack				\
+brew cask install       \
+    visual-studio-code  \
+    discord             \
+    google-chrome       \
+    docker              \
+    virtualbox          \
+    java                \
+    vagrant             \
+    jetbrains-toolbox   \
+    ultimaker-cura      \
+    arduino             \
+    google-cloud-sdk    \
+    iterm2              \
+	slack               \
 	macdown
-brew install 			\
-    go 					\
-    node 				\
-    maven				\
-    curl	 			\
-    git 				\
-    packer 				\
-    terraform 			\
-    mas 				\
-    python 				\
-    zsh 				\
-    zsh-completions 	\
-    neovim 				\
-    dep 				\
+brew install            \
+    go                  \
+    node                \
+    maven               \
+    curl                \
+    git                 \
+    packer              \
+    terraform           \
+    mas                 \
+    python              \
+    zsh                 \
+    zsh-completions     \
+    neovim              \
+    dep                 \
     kubernetes-cli      \
-    kubernetes-helm 	\
-    protobuf 			\
-    coreutils 			\
-    unzip 				\
-    openssh 			\
-    rsync 				\
-    gpatch 				\
-    gdb 				\
-    make 				\
-    less 				\
-    skaffold 			\
-	fzf 				\
-	cmake 				\
-	ansible				\
-	llvm				\
-	awscli
+    kubernetes-helm     \
+    protobuf            \
+    coreutils           \
+    unzip               \
+    openssh             \
+    rsync               \
+    gpatch              \
+    gdb                 \
+    make                \
+    less                \
+    skaffold            \
+    fzf                 \
+    cmake               \
+    ansible             \
+    llvm                \
+    awscli              \
+    httpie
 brew link --overwrite python
 
 echo "Installing mac applications..."

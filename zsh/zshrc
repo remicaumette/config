@@ -8,12 +8,11 @@ export ZDOTDIR=~
 export ZSH_CACHE_DIR=~/.config/zsh
 
 plugins=(
-	git
-	docker
-	mvn
-	npm
-	python
-    go
+    git
+    docker
+    mvn
+    npm
+    python
 )
 
 export ZSH_COMPDUMP="$ZSH_CACHE_DIR/zcompdump"
@@ -53,6 +52,7 @@ export DEFAULT_USER=$(whoami)
 export PYLINTHOME=~/.config/pylint
 export PATH="$HOME/.config/scripts:$PATH"
 export XDG_DATA_HOME=~/.config
+export HTTPIE_CONFIG_DIR=~/.config/httpie
 
 alias vi=$EDITOR
 alias vim=$EDITOR
