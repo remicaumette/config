@@ -13,6 +13,7 @@ plugins=(
     mvn
     npm
     python
+	dotenv
 )
 
 export ZSH_COMPDUMP="$ZSH_CACHE_DIR/zcompdump"
