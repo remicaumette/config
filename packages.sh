@@ -28,7 +28,8 @@ brew cask install       \
     google-cloud-sdk    \
     iterm2              \
 	slack               \
-	macdown
+	macdown				\
+	fly
 brew install            \
     go                  \
     node                \
