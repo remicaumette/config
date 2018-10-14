@@ -17,7 +17,7 @@ brew tap caskroom/cask
 brew cask install       \
     visual-studio-code  \
     discord             \
-    google-chrome       \
+	firefox				\
     docker              \
     virtualbox          \
     java                \
@@ -68,3 +68,9 @@ echo "Installing mac applications..."
 mas install 409201541 # Pages
 mas install 409203825 # Numbers
 mas install 409183694 # Keynote
+
+echo "Installing rust..."
+export RUSTUP_HOME=~/.config/rustup
+export CARGO_HOME=~/.config/cargo
+curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --default-toolchain stable
+

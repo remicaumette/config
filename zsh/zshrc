@@ -21,6 +21,10 @@ source "$ZSH/oh-my-zsh.sh"
 
 export KUBECONFIG=~/.kube/config
 export HELM_HOME=~/.config/helm
+export RUSTUP_HOME=~/.config/rustup
+export CARGO_HOME=~/.config/cargo
+
+source "$CARGO_HOME/env"
 
 source <(pip3 completion --zsh)
 source <(helm completion zsh)

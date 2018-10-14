@@ -6,7 +6,7 @@ sudo pip3 install --upgrade neovim
 nvim
 cd ~/.config/nvim/plugged/youcompleteme/
 git submodule update --init --recursive
-./install.py --clang-completer --go-completer
+./install.py --clang-completer --go-completer --rust-completer
 cd third_party/ycmd/third_party/
 rm -rf gocode
 git clone git@github.com:mdempsky/gocode.git

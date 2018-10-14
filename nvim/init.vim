@@ -29,6 +29,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline_theme = 'onedark'
 let g:airline_exclude_preview = 1
+let g:ycm_rust_src_path = '~/.config/rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/'
 
 set mouse=a
 set encoding=utf-8
