@@ -4,7 +4,6 @@ echo "Brew updates..."
 brew upgrade
 brew cask upgrade
 brew cleanup -s
-brew cask cleanup
 
 echo "NPM updates..."
 npm update -g
