@@ -61,7 +61,8 @@ brew install            \
     ansible             \
     llvm                \
     awscli              \
-    httpie
+    httpie              \
+    watchman
 brew link --overwrite python
 
 echo "Installing mac applications..."
