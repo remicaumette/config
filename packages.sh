@@ -17,8 +17,7 @@ brew tap caskroom/cask
 brew cask install       \
     visual-studio-code  \
     discord             \
-	firefox				\
-    docker              \
+	firefox             \
     virtualbox          \
     java                \
     vagrant             \
@@ -28,8 +27,9 @@ brew cask install       \
     google-cloud-sdk    \
     iterm2              \
 	slack               \
-	macdown				\
-	fly
+	macdown             \
+	fly                 \
+    minikube
 brew install            \
     go                  \
     node                \
@@ -62,6 +62,8 @@ brew install            \
     llvm                \
     awscli              \
     httpie              \
+    docker              \
+    docker-machine      \
     watchman
 brew link --overwrite python
 

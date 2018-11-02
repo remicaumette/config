@@ -13,7 +13,7 @@ plugins=(
     mvn
     npm
     python
-	dotenv
+    dotenv
 )
 
 export ZSH_COMPDUMP="$ZSH_CACHE_DIR/zcompdump"
@@ -22,6 +22,7 @@ source "$ZSH/oh-my-zsh.sh"
 export KUBECONFIG=~/.kube/config
 export HELM_HOME=~/.config/helm
 export RUSTUP_HOME=~/.config/rustup
+export MINIKUBE_HOME=~/.config/minikube
 export CARGO_HOME=~/.config/cargo
 
 source "$CARGO_HOME/env"
@@ -29,6 +30,7 @@ source "$CARGO_HOME/env"
 source <(pip3 completion --zsh)
 source <(helm completion zsh)
 source <(kubectl completion zsh)
+source <(MINIKUBE_WANTUPDATENOTIFICATION=false minikube completion zsh)
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
 if [[ -n $SSH_CONNECTION ]]; then
