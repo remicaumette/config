@@ -17,7 +17,7 @@ brew tap caskroom/cask
 brew cask install       \
     visual-studio-code  \
     discord             \
-	firefox             \
+	google-chrome       \
     virtualbox          \
     java                \
     vagrant             \
@@ -64,7 +64,8 @@ brew install            \
     httpie              \
     docker              \
     docker-machine      \
-    watchman
+    watchman            \
+    txn2/tap/kubefwd
 brew link --overwrite python
 
 echo "Installing mac applications..."
