@@ -60,6 +60,7 @@ export PYLINTHOME=~/.config/pylint
 export PATH="$HOME/.config/scripts:$PATH"
 export XDG_DATA_HOME=~/.config
 export HTTPIE_CONFIG_DIR=~/.config/httpie
+export GO111MODULE=on
 
 alias vi=$EDITOR
 alias vim=$EDITOR

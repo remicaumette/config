@@ -65,7 +65,8 @@ brew install            \
     docker              \
     docker-machine      \
     watchman            \
-    txn2/tap/kubefwd
+    txn2/tap/kubefwd    \
+    bazelbuild/tap/bazel
 brew link --overwrite python
 
 echo "Installing mac applications..."
