@@ -51,15 +51,12 @@ brew install            \
     unzip               \
     openssh             \
     rsync               \
-    gpatch              \
-    gdb                 \
     make                \
     less                \
     skaffold            \
     fzf                 \
     cmake               \
     ansible             \
-    llvm                \
     awscli              \
     httpie              \
     docker              \
