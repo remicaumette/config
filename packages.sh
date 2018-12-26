@@ -32,6 +32,7 @@ brew cask install       \
     minikube
 brew install            \
     unrar               \
+    terraform-inventory \
     go                  \
     node                \
     maven               \
