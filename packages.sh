@@ -31,6 +31,7 @@ brew cask install       \
 	fly                 \
     minikube
 brew install            \
+    unrar               \
     go                  \
     node                \
     maven               \
