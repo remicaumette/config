@@ -32,6 +32,7 @@ brew cask install       \
     minikube
 brew install            \
     unrar               \
+    wget                \
     terraform-inventory \
     go                  \
     node                \
@@ -65,6 +66,7 @@ brew install            \
     docker-machine      \
     watchman            \
     kustomize           \
+    docker-compose      \
     txn2/tap/kubefwd    \
     bazelbuild/tap/bazel
 brew link --overwrite python

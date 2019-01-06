@@ -63,5 +63,3 @@ export GO111MODULE=auto
 
 alias vi=$EDITOR
 alias vim=$EDITOR
-alias python=python3
-alias pip=pip3
