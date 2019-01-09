@@ -41,6 +41,9 @@ brew install            \
     git                 \
     packer              \
     terraform           \
+    nomad               \
+    consul              \
+    vault               \
     mas                 \
     python              \
     zsh                 \
