@@ -14,6 +14,7 @@ brew cask install \
 
 echo "Installing packages..."
 brew tap caskroom/cask
+brew tap drone/drone
 brew cask install       \
     visual-studio-code  \
     discord             \
@@ -44,6 +45,8 @@ brew install            \
     nomad               \
     consul              \
     vault               \
+    drone               \
+    cfssl               \
     mas                 \
     python              \
     zsh                 \
