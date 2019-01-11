@@ -47,6 +47,7 @@ brew install            \
     vault               \
     drone               \
     cfssl               \
+    mkcert              \
     mas                 \
     python              \
     zsh                 \
