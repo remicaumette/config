@@ -30,7 +30,8 @@ brew cask install       \
 	slack               \
 	macdown             \
 	fly                 \
-    minikube
+    minikube            \
+    ngrok
 brew install            \
     unrar               \
     wget                \
