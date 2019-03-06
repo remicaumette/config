@@ -34,6 +34,8 @@ brew cask install       \
     ngrok
 brew install            \
     unrar               \
+    ffmpeg              \
+    libav               \
     wget                \
     terraform-inventory \
     go                  \
