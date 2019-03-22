@@ -31,11 +31,13 @@ brew cask install       \
 	macdown             \
 	fly                 \
     minikube            \
-    ngrok
+    ngrok               \
+    sketch
 brew install            \
     unrar               \
     ffmpeg              \
     libav               \
+    imagemagick         \
     wget                \
     terraform-inventory \
     go                  \
