@@ -1,6 +1,6 @@
 echo "Configuring vscode..."
 code --install-extension PeterJausovec.vscode-docker
-code --install-extension eg2.tslint
+code --install-extension ms-vscode.vscode-typescript-tslint-plugin
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.Go
 code --install-extension msjsdiag.debugger-for-chrome
@@ -15,6 +15,9 @@ code --install-extension eamodio.gitlens
 code --install-extension vadimcn.vscode-lldb
 code --install-extension rust-lang.rust
 code --install-extension jpoissonnier.vscode-styled-components
+code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
+code --install-extension esbenp.prettier-vscode
+code --install-extension redhat.vscode-yaml
 mkdir -p ~/Library/Application\ Support/Code/User/
 cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/
 cp ./vscode/keybindings.json ~/Library/Application\ Support/Code/User/

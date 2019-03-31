@@ -64,6 +64,8 @@ export ANSIBLE_PYTHON_INTERPRETER=/usr/bin/python3
 
 alias vi=$EDITOR
 alias vim=$EDITOR
+alias pip=pip3
+alias python=python3
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/consul consul
