@@ -32,9 +32,11 @@ brew cask install       \
 	fly                 \
     minikube            \
     ngrok               \
-    sketch
+    sketch              \
+    docker
 brew install            \
     unrar               \
+    golang-migrate      \
     ffmpeg              \
     libav               \
     imagemagick         \
