@@ -36,6 +36,8 @@ brew cask install       \
     docker
 brew install            \
     unrar               \
+    postgresql          \
+    gource              \
     golang-migrate      \
     ffmpeg              \
     libav               \
@@ -94,3 +96,6 @@ echo "Installing rust..."
 export RUSTUP_HOME=~/.config/rustup
 export CARGO_HOME=~/.config/cargo
 curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --default-toolchain stable
+
+echo "Installing rvm..."
+curl -sSL https://get.rvm.io | bash -s stable --ruby
