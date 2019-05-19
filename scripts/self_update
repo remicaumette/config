@@ -8,5 +8,5 @@ brew cleanup -s
 echo "NPM updates..."
 npm update -g
 
-echo "PIP updates..."
-pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 sudo pip3 install -U
+# echo "PIP updates..."
+# pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U
