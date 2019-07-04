@@ -64,6 +64,7 @@ export HTTPIE_CONFIG_DIR=~/.config/httpie
 export GO111MODULE=auto
 export ANSIBLE_PYTHON_INTERPRETER=/usr/bin/python3
 export PATH="$PATH:~/Library/Android/sdk/platform-tools:~/Library/Android/sdk/tools"
+export PATH="~/.jenv/bin:$PATH"
 
 alias vi=$EDITOR
 alias vim=$EDITOR
@@ -71,6 +72,7 @@ alias pip=pip3
 alias python=python3
 
 eval "$(rbenv init -)"
+eval "$(jenv init -)"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/consul consul

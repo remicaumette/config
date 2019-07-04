@@ -14,9 +14,11 @@ brew cask install \
 
 echo "Installing packages..."
 brew tap caskroom/cask
+brew cask install adoptopenjdk8
 brew tap drone/drone
 brew cask install       \
     visual-studio-code  \
+    adoptopenjdk/openjdk/adoptopenjdk8       \
     discord             \
 	google-chrome       \
     virtualbox          \
@@ -83,6 +85,7 @@ brew install            \
     docker              \
     docker-machine      \
     watchman            \
+    jenv                \
     kustomize           \
     docker-compose      \
     txn2/tap/kubefwd    \
