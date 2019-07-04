@@ -33,6 +33,7 @@ brew cask install       \
     minikube            \
     ngrok               \
     sketch              \
+    android-studio      \
     docker
 brew install            \
     unrar               \
@@ -85,8 +86,6 @@ brew install            \
     kustomize           \
     docker-compose      \
     txn2/tap/kubefwd    \
-    android-sdk         \
-    android-ndk         \
     bazelbuild/tap/bazel
 brew link --overwrite python
 
