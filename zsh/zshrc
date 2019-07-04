@@ -63,6 +63,7 @@ export XDG_DATA_HOME=~/.config
 export HTTPIE_CONFIG_DIR=~/.config/httpie
 export GO111MODULE=auto
 export ANSIBLE_PYTHON_INTERPRETER=/usr/bin/python3
+export PATH="$PATH:~/Library/Android/sdk/platform-tools:~/Library/Android/sdk/tools"
 
 alias vi=$EDITOR
 alias vim=$EDITOR
