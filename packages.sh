@@ -85,7 +85,6 @@ brew install            \
     docker              \
     docker-machine      \
     watchman            \
-    jenv                \
     kustomize           \
     docker-compose      \
     txn2/tap/kubefwd    \
