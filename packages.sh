@@ -85,6 +85,8 @@ brew install            \
     kustomize           \
     docker-compose      \
     txn2/tap/kubefwd    \
+    android-sdk         \
+    android-ndk         \
     bazelbuild/tap/bazel
 brew link --overwrite python
 

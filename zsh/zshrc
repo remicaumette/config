@@ -27,7 +27,6 @@ export CARGO_HOME=~/.config/cargo
 
 source "$CARGO_HOME/env"
 
-source <(pip3 completion --zsh)
 source <(helm completion zsh)
 source <(kubectl completion zsh)
 source <(MINIKUBE_WANTUPDATENOTIFICATION=false minikube completion zsh)
