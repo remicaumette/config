@@ -67,8 +67,6 @@ export PATH="$PATH:~/Library/Android/sdk/platform-tools:~/Library/Android/sdk/to
 
 alias vi=$EDITOR
 alias vim=$EDITOR
-alias pip=pip3
-alias python=python3
 
 eval "$(rbenv init -)"
 

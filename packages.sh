@@ -18,8 +18,10 @@ brew cask install adoptopenjdk8
 brew tap drone/drone
 brew cask install       \
     visual-studio-code  \
+    fastlane            \
     adoptopenjdk/openjdk/adoptopenjdk8       \
     discord             \
+    react-native-debugger \
 	google-chrome       \
     virtualbox          \
     java                \
