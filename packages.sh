@@ -18,6 +18,7 @@ brew cask install adoptopenjdk8
 brew tap drone/drone
 brew cask install       \
     visual-studio-code  \
+    sequel-pro          \
     fastlane            \
     adoptopenjdk/openjdk/adoptopenjdk8       \
     discord             \
