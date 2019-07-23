@@ -16,18 +16,18 @@ echo "Installing packages..."
 brew tap caskroom/cask
 brew cask install adoptopenjdk8
 brew tap drone/drone
+brew tap heroku/brew
 brew cask install       \
     visual-studio-code  \
-    sequel-pro          \
+    datagrip               \
     fastlane            \
     adoptopenjdk/openjdk/adoptopenjdk8       \
-    discord             \
     react-native-debugger \
 	google-chrome       \
     virtualbox          \
     java                \
+    intellij-idea       \
     vagrant             \
-    jetbrains-toolbox   \
     ultimaker-cura      \
     arduino             \
     google-cloud-sdk    \
@@ -42,6 +42,7 @@ brew cask install       \
     docker
 brew install            \
     unrar               \
+    heroku              \
     postgresql          \
     gource              \
     golang-migrate      \
