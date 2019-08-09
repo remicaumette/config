@@ -21,6 +21,7 @@ brew cask install       \
     visual-studio-code  \
     datagrip               \
     fastlane            \
+    notion \
     adoptopenjdk/openjdk/adoptopenjdk8       \
     react-native-debugger \
 	google-chrome       \
