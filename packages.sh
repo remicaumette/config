@@ -80,6 +80,7 @@ brew install            \
     openssh             \
     rsync               \
     make                \
+    redis               \
     less                \
     skaffold            \
     fzf                 \
