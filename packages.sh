@@ -14,7 +14,6 @@ brew cask install \
 
 echo "Installing packages..."
 brew tap caskroom/cask
-brew cask install adoptopenjdk8
 brew tap drone/drone
 brew tap heroku/brew
 brew cask install       \
@@ -29,18 +28,15 @@ brew cask install       \
     java                \
     intellij-idea       \
     vagrant             \
-    ultimaker-cura      \
-    arduino             \
     google-cloud-sdk    \
     iterm2              \
 	slack               \
-	macdown             \
-	fly                 \
     minikube            \
     ngrok               \
     sketch              \
     android-studio      \
-    docker
+    docker              \
+    vlc
 brew install            \
     unrar               \
     heroku              \
@@ -65,12 +61,10 @@ brew install            \
     drone               \
     cfssl               \
     mkcert              \
-    mas                 \
     python              \
     zsh                 \
     zsh-completions     \
     neovim              \
-    dep                 \
     kubernetes-cli      \
     kubernetes-helm     \
     protobuf            \
@@ -87,7 +81,6 @@ brew install            \
     cmake               \
     ansible             \
     awscli              \
-    httpie              \
     docker              \
     docker-machine      \
     watchman            \
@@ -96,11 +89,6 @@ brew install            \
     txn2/tap/kubefwd    \
     bazelbuild/tap/bazel
 brew link --overwrite python
-
-echo "Installing mac applications..."
-mas install 409201541 # Pages
-mas install 409203825 # Numbers
-mas install 409183694 # Keynote
 
 echo "Installing rust..."
 export RUSTUP_HOME=~/.config/rustup
