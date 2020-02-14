@@ -33,8 +33,8 @@ let g:ycm_rust_src_path = '~/.config/rustup/toolchains/stable-x86_64-apple-darwi
 
 set mouse=a
 set encoding=utf-8
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set autoindent
 set number
 set noswapfile
