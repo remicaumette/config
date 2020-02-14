@@ -1,12 +1,3 @@
-export ZSH=~/.config/oh-my-zsh
-export ZSH_THEME=agnoster
-export ENABLE_CORRECTION=false
-export HISTFILE=~/.config/zsh/histfile
-export HISTSIZE=1000
-export SAVEHIST=1000
-export ZDOTDIR=~
-export ZSH_CACHE_DIR=~/.config/zsh
-
 plugins=(
     git
     docker
@@ -16,21 +7,17 @@ plugins=(
     dotenv
 )
 
-export ZSH_COMPDUMP="$ZSH_CACHE_DIR/zcompdump"
+export ZSH=~/.config/oh-my-zsh
+export ZSH_THEME=agnoster
+export ENABLE_CORRECTION=false
+
 source "$ZSH/oh-my-zsh.sh"
 
-export KUBECONFIG=~/.kube/config
-export HELM_HOME=~/.config/helm
-export RUSTUP_HOME=~/.config/rustup
-export MINIKUBE_HOME=~/.config/minikube
-export CARGO_HOME=~/.config/cargo
+if [ -f "$CARGO_HOME/env" ]; then
+    source "$CARGO_HOME/env"
+fi
 
-source "$CARGO_HOME/env"
-
-source <(helm completion zsh)
 source <(kubectl completion zsh)
-source <(MINIKUBE_WANTUPDATENOTIFICATION=false minikube completion zsh)
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
 if [[ -n $SSH_CONNECTION ]]; then
     export EDITOR=vim
@@ -51,16 +38,9 @@ export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export MANPATH="/usr/local/opt/make/libexec/gnuman:$MANPATH"
-export BABEL_DISABLE_CACHE=1
-export NODE_REPL_HISTORY=''
-export PACKER_CACHE_DIR=~/.config/packer
-export VAGRANT_HOME=~/.config/vagrant
 export CHECKPOINT_DISABLE=1
 export DEFAULT_USER=$(whoami)
-export PYLINTHOME=~/.config/pylint
 export PATH="$HOME/.config/scripts:$PATH"
-export XDG_DATA_HOME=~/.config
-export HTTPIE_CONFIG_DIR=~/.config/httpie
 export GO111MODULE=auto
 export ANSIBLE_PYTHON_INTERPRETER=/usr/bin/python3
 export PATH="$PATH:~/Library/Android/sdk/platform-tools:~/Library/Android/sdk/tools"
@@ -70,8 +50,3 @@ alias vi=$EDITOR
 alias vim=$EDITOR
 
 eval "$(rbenv init -)"
-
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/consul consul
-complete -o nospace -C /usr/local/bin/vault vault
-complete -o nospace -C /usr/local/bin/nomad nomad
