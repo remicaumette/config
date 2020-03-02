@@ -1,6 +1,7 @@
 echo "Configuring zsh..."
 touch ~/.hushlogin
 export ZSH="$HOME/.config/oh-my-zsh"
+mkdir ~/.nvm
 mkdir -p ~/.config/zsh
 cp ./zsh/zshrc ~/.zshrc
 ln -s ~/.zshrc ~/.config/zsh/.zshrc
