@@ -49,7 +49,6 @@ brew install            \
     wget                \
     terraform-inventory \
     go                  \
-    node                \
     maven               \
     curl                \
     git                 \
