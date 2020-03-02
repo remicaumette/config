@@ -86,6 +86,7 @@ brew install            \
     watchman            \
     kustomize           \
     docker-compose      \
+    nvm                 \
     txn2/tap/kubefwd    \
     bazelbuild/tap/bazel
 brew link --overwrite python
